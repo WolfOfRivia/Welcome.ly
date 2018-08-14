@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+body {
+  background-color: white;
+  font-family: "Open Sans", sans-serif;
+  color: #444;
+}
+
+.navbar {
+  background-color: #fff;
+}
+
+.navbar-brand {
+  color: #fc3a42 !important;
+}
+
+.btn-custom {
+  background-color: #fff;
+  border: 2px solid #fc3a42;
+  color: #fc3a42;
+}
+
+.btn-custom:hover {
+    background-color: #fc3a42;
+    color: #fff;
+}
+
+.btn-outline-custom-primary {
+  background-color: #fc3a42;
+  color: #fff;
+}
+
+.btn-outline-custom-trans {
+  background-color: rgba(0,0,0,0);
+  color: #fff;
+}
+
+.btn-outline-custom-trans:hover {
+  color: #fc3a42;
+}
+
+.primary-color {
+  color: #fc3a42;
+}
+
+#hero {
+  height: 100vh;
+  background: url('../images/fabian-irsara-92113-unsplash_opt.jpg') center center;
+  background-size: cover;
+  color: #fff;
+  position: relative;
+}
+
+#hero .container {
+  text-align: center;
+  width: 50%;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+
+#hero input.form-control {
+  padding: 1.5em; 
+}
+
+.material-icons.vid-icon {
+  position: relative;
+  top: .4rem;
+  left: 10px;
+}
+
+#features {
+  background-color: #fff;
+  text-align: center;
+  padding: 70px 0;
+}
+
+#features .row {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+#features .col-md-4 {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 31%;
+  flex: 0 0 31%;
+}
+
+.col-number {
+  position: absolute;
+  top: 50%;
+  left: -5%;
+  font-size: 1.5rem;
+}
+
+#footer {
+  border-top: 1px solid #c1c1c1;
+}
+
+@media screen and (max-width: 992px) {
+
+  #hero .container {
+    text-align: center;
+    width: 80%;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+
+  /* === FEATURES ===*/
+
+  #features .row {
+    display: block;
+  }
+
+  #features .col-md-4 {
+    width: 100%;
+  }
+
+  .col-number {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 592px) {
+
+  #hero .container {
+    text-align: center;
+    width: 100%;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+  }
+
+  #features .container {
+    width: 90%;
+  }
+
+}
